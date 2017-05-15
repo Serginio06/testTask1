@@ -1,0 +1,118 @@
+bigapplebuddy.com
+http://www.bigapplebuddy.com/buy-google-home-today/?gclid=CPP90I7l09MCFUc8Gwodc6YKPA
+
+button {
+    background-color: #22a1c4;
+    border: 2px solid #22a1c4;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #22a1c4;
+    box-shadow: 0 0 6px rgba(35, 173, 255, 1), 0 0 10px rgba(35, 173, 255, 1);
+    transition: all 700ms;
+
+}
+
+button#getStarted {
+background: #0ebb1e;
+}
+
+.footer-widgets {
+    background-color: #f5f5f5;
+    clear: both;
+    text-align: center;
+    position: relative;
+    z-index: 8 !important;
+}
+
+#leaveMessageEnvelop {
+background: #e70bc0;
+}
+
+
+#leaveMessageRight {
+    background: #e70bc0;
+}
+
+h4#asFeatured {
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1,h2,h3,h4 {
+    font-family: "Ek Mukta", sans-serif;
+    font-weight: 200;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+h3#pricing  {
+    color: #22a1c4;
+}
+
+.site-footer {
+    background-color: #000;
+}
+
+PRIVACY on footer
+<p>Copyright 2017 Big Apple Buddy LLC | <a href="http://www.bigapplebuddy.com/privacy-policy">Privacy Policy</a> | <a href="http://www.bigapplebuddy.com/terms-and-conditions">Terms and Conditions</a><br><a href="http://www.bigapplebuddy.com/shop">Shop</a>  | <a href="http://www.bigapplebuddy.com/blog">Blog</a> | <a href="http://www.bigapplebuddy.com/press">Press</a> | <a href="http://www.bigapplebuddy.com/partnerships">Partnerships</a> | <a href="mailto:info@bigapplebuddy.com">info@bigapplebuddy.com</a></p>
+
+<p><span style="color: #333333;">Check out our <span style="color: #3366ff;"><a style="color: #3366ff;" href="/faq">FAQ Page</a></span>, email us at <span style="color: #3366ff;"><a style="color: #3366ff;" href="mailto:info@bigapplebuddy.com">info@bigapplebuddy.com</a></span></span> <span style="color: #333333;">or message us on</span> <span style="color: #3fc43f;">WhatsApp</span><span style="color: #333333;"> at +1 929 364 3227</span></p>
+
+
+
+FAQ with transition effects
+
+div#notActive
+button.accordion:after {
+    font-family: FontAwesome;
+    content: "\f0d7";
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+    color: white;
+}
+
+div#active 
+button.accordion.active:after {
+    font-family: FontAwesome;
+    content: "\f0d8";
+    color: white;
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: transparent;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin: 0 auto;
+    display: block;
+    width: 60%;
+    color: white;
+}
+
+
+fa:
+<i class="fa fa-laptop fa-5x" aria-hidden="true"></i>
+<i class="fa fa-laptop fa-5x" aria-hidden="true"></i>
+<i class="fa fa-user fa-5x" aria-hidden="true"></i>
+
+
+.simple-social-icons#hover {
+    background-color: #666666 !important;
+    color: #ffffff !important;
+}
+
+simple-social-icons#notHover {
+    background-color: #22a1c4 !important;
+    border-radius: 3px;
+    color: #ffffff !important;
+    font-size: 19px;
+    padding: 10px;
+}

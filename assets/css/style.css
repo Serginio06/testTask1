@@ -1,0 +1,349 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    margin: 0;
+}
+
+body {
+    /*position: relative;*/
+    overflow-x: hidden;
+}
+
+.home-image {
+    display: block;
+    width: 100%;
+    margin: auto;
+    max-width: 200px;
+}
+
+[class*="col-"] {
+    width: 100%;
+    float: left;
+
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.header {
+    position: relative;
+    height: 150px;
+    background-color: #000;
+    z-index: 10000;
+}
+
+#logo-img {
+    display: block;
+    width: 240px;
+    margin: 30px auto;
+
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    background-image: url("../image/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.home {
+    position: relative;
+    z-index: 10000;
+    padding-top: 50px;
+    background-color: #ffffff;
+}
+
+.home-text {
+    text-align: center;
+    height: 480px;
+    min-width: 400px;
+    overflow-x: hidden;
+}
+
+#home-row1, #home-row3 {
+    margin: 30px 5px;
+    font-size: 24px;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+#home-row2 {
+    font-size: 48px;
+    font-weight: 200;
+    line-height: 1.5em;
+    letter-spacing: 2px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#home-row4 {
+    text-transform: uppercase;
+    margin: 20px 5px;
+    font-size: 24px;
+}
+
+h1, h2, h3, h4, p {
+    font-family: "Ek Mukta", sans-serif;
+    font-weight: 200;
+
+}
+
+h1 {
+    font-size: 28px;
+}
+
+.tizzer {
+    position: relative;
+    height: 450px;
+    background-color: transparent;
+    z-index: 10000;
+}
+
+h3#tizzer-text {
+    color: #ffffff;
+    width: 100%;
+    font-size: 24px;
+    position: relative;
+    /*margin-top: 70px;*/
+    padding: 140px 60px;
+    text-align: center;
+    /*text-transform: uppercase;*/
+    /*font-weight: 200;*/
+    line-height: 2em;
+    /*letter-spacing: 1.5px;*/
+}
+
+.footer {
+    position: relative;
+    z-index: 10000;
+    height: 300px;
+    background-color: beige;
+}
+
+button {
+    display: block;
+    position: relative;
+    /*top: 30px;*/
+    margin: 35px auto 15px auto;
+    width: 150px;
+    height: 60px;
+    background-color: #22a1c4;
+    border: 2px solid #22a1c4;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.19), 0 4px 6px 0 rgba(0, 0, 0, 0.19);
+    /*box-shadow: 0 4px 8px 0 rgba(0,0,0,0.19), 0 6px 8px 0 rgba(0,0,0,0.19);*/
+    /*-webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;*/
+    /*transition: width 2s, height 2s, background-color 2s, transform 2s;*/
+    transition: all 700ms;
+
+}
+
+button:hover {
+    background-color: #22a1c4;
+    box-shadow: 0 0 6px rgba(35, 173, 255, 1), 0 0 10px rgba(35, 173, 255, 1);
+    transition: all 700ms;
+    cursor: pointer;
+
+}
+
+.button-type1 {
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    white-space: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+
+}
+
+.fa-bars {
+    color: #ffffff;
+    position: relative;
+    left: 50%;
+}
+
+.hiw {
+    position: relative;
+    height: auto;
+    z-index: 10000;
+    background-color: #EFEFEF;
+    text-align: center;
+}
+
+.h4 {
+    /*display: block;*/
+    padding: 40px 0;
+    /*margin: 0 auto;*/
+    /*width: 50%;*/
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5em;
+}
+
+.hiw-card {
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.19), 0 4px 4px 4px rgba(0, 0, 0, 0.20);
+    background-color: #fff;
+    width: 320px;
+    height: 450px;
+    display: inline-block;
+    margin: 20px 20px;
+}
+
+.hiw-image {
+    display: block;
+    margin: auto;
+    padding: 25px;
+    width: 320px;
+}
+
+.hiw-header {
+    text-align: center;
+    margin: 15px auto;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 200;
+    color: #000;
+}
+
+.hiw-description {
+
+    display: block;
+    margin: auto;
+    width: 290px ;
+    color: #000;
+    font-family: "Ek Mukta", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+}
+
+.hiw-button {
+    margin: 30px 0;
+}
+
+.press-wrap {
+    position: relative;
+    z-index: 10000;
+    background-color: #fff;
+
+}
+
+.press-wrap-block {
+    background-color: #fff;
+    /*width: 200px;*/
+    /*height: 60px;*/
+    /*display: inline-block;*/
+    /*margin: 20px 35px;*/
+    display: block;
+    text-align: center;
+    margin: 10px 20px;
+    /*width: inherit;*/
+}
+
+.press-wrap-image {
+    display: inline-block;
+    margin: 20px 35px;
+    padding: 20px;
+    width: 250px;
+}
+
+/*=========== For mobile devices ===============*/
+@media only screen and (min-width: 765px) {
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+
+    .col-2 {
+        width: 16.66%;
+    }
+
+    .col-3 {
+        width: 25%;
+    }
+
+    .col-4 {
+        width: 33.33%;
+    }
+
+    .col-5 {
+        width: 41.66%;
+    }
+
+    .col-6 {
+        width: 50%;
+    }
+
+    .col-7 {
+        width: 58.33%;
+    }
+
+    .col-8 {
+        width: 66.66%;
+        /*border: 1px solid blueviolet;*/
+    }
+
+    .col-9 {
+        width: 75%;
+    }
+
+    .col-10 {
+        width: 83.33%;
+    }
+
+    .col-11 {
+        width: 91.66%;
+    }
+
+    .col-12 {
+        width: 100%;
+    }
+
+    h3#tizzer-text {
+        color: #ffffff;
+        width: 50%;
+        font-size: 24px;
+        position: relative;
+        padding: 100px 0 0 60px;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 200;
+        line-height: 3em;
+        letter-spacing: 1.5px;
+    }
+
+    .home-image {
+        width: 100%;
+        max-width: 500px;
+        /*border: 1px solid chartreuse;*/
+        margin: 0;
+    }
+
+    .hiw-card {
+        box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.19), 0 4px 4px 4px rgba(0, 0, 0, 0.20);
+        background-color: #fff;
+        width: 320px;
+        height: 450px;
+        display: inline-block;
+        margin: 20px 25px;
+    }
+
+}
