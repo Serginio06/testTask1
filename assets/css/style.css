@@ -10,7 +10,9 @@ img {
 
 body {
     /*position: relative;*/
-    overflow-x: hidden;
+    min-width: 410px;
+    overflow-x: auto;
+    background-color: transparent;
 }
 
 .home-image {
@@ -53,7 +55,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 500px;
+    height: 1300px;
     width: 100%;
     z-index: 1000;
 }
@@ -100,8 +102,15 @@ h1, h2, h3, h4, p {
 }
 
 h1 {
-    font-size: 28px;
+    text-align: center;
+    font-size: 40px;
+    padding: 30px 10px;
+    display: block;
+    margin: auto;
+    background-color: inherit;
 }
+
+
 
 .tizzer {
     position: relative;
@@ -111,15 +120,17 @@ h1 {
 }
 
 h3#tizzer-text {
+    display: block;
+    margin: auto;
     color: #ffffff;
-    width: 100%;
+    width: 90%;
     font-size: 24px;
     position: relative;
     /*margin-top: 70px;*/
     padding: 140px 60px;
     text-align: center;
-    /*text-transform: uppercase;*/
-    /*font-weight: 200;*/
+    text-transform: uppercase;
+    font-weight: 200;
     line-height: 2em;
     /*letter-spacing: 1.5px;*/
 }
@@ -132,12 +143,37 @@ h3#tizzer-text {
 }
 
 button {
-    display: block;
+
     position: relative;
     /*top: 30px;*/
-    margin: 35px auto 15px auto;
+    /*margin: 35px auto 35px auto;*/
+    /*width: 150px;*/
+    /*height: 60px;*/
+
+
+}
+
+.button-type1:hover {
+    background-color: #22a1c4;
+    box-shadow: 0 0 6px rgba(35, 173, 255, 1), 0 0 10px rgba(35, 173, 255, 1);
+    transition: all 700ms;
+    cursor: pointer;
+
+}
+
+.button-type1 {
+    display: block;
+    margin: 35px auto 35px auto;
     width: 150px;
     height: 60px;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+    white-space: normal;
+    letter-spacing: 2px;
+    text-transform: uppercase;
     background-color: #22a1c4;
     border: 2px solid #22a1c4;
     border-radius: 5px;
@@ -149,34 +185,13 @@ button {
 
 }
 
-button:hover {
-    background-color: #22a1c4;
-    box-shadow: 0 0 6px rgba(35, 173, 255, 1), 0 0 10px rgba(35, 173, 255, 1);
-    transition: all 700ms;
-    cursor: pointer;
-
-}
-
-.button-type1 {
-    color: #fff;
-    text-align: center;
-    font-size: 16px;
-    font-weight: 100;
-    -webkit-font-smoothing: antialiased;
-    white-space: normal;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-
-
-}
-
 .fa-bars {
     color: #ffffff;
     position: relative;
     left: 50%;
 }
 
-.hiw {
+.hiw, .pricing {
     position: relative;
     height: auto;
     z-index: 10000;
@@ -184,7 +199,11 @@ button:hover {
     text-align: center;
 }
 
-.h4 {
+h3 {
+
+}
+
+h4 {
     /*display: block;*/
     padding: 40px 0;
     /*margin: 0 auto;*/
@@ -239,6 +258,7 @@ button:hover {
     margin: 30px 0;
 }
 
+
 .press-wrap {
     position: relative;
     z-index: 10000;
@@ -263,6 +283,140 @@ button:hover {
     margin: 20px 35px;
     padding: 20px;
     width: 250px;
+}
+
+
+.pricing-card {
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.19), 0 4px 4px 4px rgba(0, 0, 0, 0.20);
+    background-color: #fff;
+    width: 350px;
+    height: 400px;
+    display: inline-block;
+    margin: 20px 20px;
+}
+
+.blue-text {
+    color: #22a1c4;
+}
+
+.pricing-h3 {
+    padding: 30px 10%;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 200;
+
+}
+
+.pricing-description {
+    padding: 0 10% 10% 20px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    float: left;
+}
+
+.fa-5x {
+    font-size: 150px;
+    padding-top: 10px;
+}
+
+
+.slider {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    z-index: 10000;
+}
+
+.slider-buttons {
+    width: 200px;
+    height: auto;
+    padding: 5px;
+}
+
+.slider-button {
+    display: inline-block;
+    padding: 5px 5px;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-color: #999999;
+    border-color:#fff;
+}
+
+.slider-button:hover {
+    background-color: #000;
+    border-color:#000;
+}
+
+.slider-button-active {
+    background-color: #000;
+    border-color:#000;
+}
+
+.slider-text {
+    width: 90%;
+    display: block;
+    margin: auto;
+    padding: 25px 10px;
+    font-size: 22px;
+    font-weight: 200;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+}
+
+.slider-img {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    left:0;
+    min-width: 300px;
+    width: 380px;
+    cursor:pointer;
+    transition: all 700ms;
+    position: relative;
+    z-index: 1000;
+    /*height: 230px;*/
+    /*transition: all 1500ms;*/
+    /*-moz-transition: top 1s linear, opacity 1s linear;*/
+    /*-webkit-transition: top 1s linear, opacity 1s linear;*/
+}
+
+
+
+.slider-wrapper {
+    text-align: center;
+    display: block;
+    margin: auto;
+    background-color: #ffffff;
+    /*position: relative;*/
+    /*left:0;*/
+    z-index: 10000;
+    /*transition: all 700ms;*/
+}
+
+.slider-images-wrapper {
+    position: relative;
+    left:0px;
+    transition: all 700ms;
+    /*width: 2500px;*/
+}
+
+.slider-images-wrapper-slide {
+
+    position: relative;
+    left: 0;
+    transition: all 700ms;
+}
+
+
+
+.slider-buttons {
+    padding: 10px 10px;
+    display: block;
+    margin: auto;
+    width: 400px;
 }
 
 /*=========== For mobile devices ===============*/
@@ -319,10 +473,10 @@ button:hover {
 
     h3#tizzer-text {
         color: #ffffff;
-        width: 50%;
+        width: 100%;
         font-size: 24px;
         position: relative;
-        padding: 100px 0 0 60px;
+        padding: 100px 10% 10% 60px;
         text-align: center;
         text-transform: uppercase;
         font-weight: 200;

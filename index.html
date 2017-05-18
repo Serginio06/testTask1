@@ -5,9 +5,10 @@
 
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="app.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
+<body onload="addImages()" onresize="addImages()">
 
 <div class="row header">
     <div class="col-12">
@@ -54,8 +55,11 @@
         <h3 id="tizzer-text">Receive your GOOGLE HOME anywhere in the world in as little as 2 business days</h3>
     </div>
 </div>
+
+<!-- =========== How it work ============-->
 <div class="row hiw">
-    <p class="h4">fast. easy. reliable</p>
+    <h4>fast. easy. reliable</h4>
+    <!--<p class="h4">fast. easy. reliable</p>-->
     <div class="hiw-card">
         <img src="assets/image/How-it-Works-1-Get%20a%20quote.jpg" alt="" class="hiw-image">
         <h2 class="hiw-header">1. get a quote</h2>
@@ -78,14 +82,52 @@
         <button class="button-type1">See pricing</button>
     </div>
 </div>
+
+<!-- ========== our client ================ -->
 <div class="row press-wrap">
-    <p class="h4">as featured in:</p>
+    <h4>as featured in:</h4>
+    <!--<p class="h4">as featured in:</p>-->
     <div class="press-wrap-block">
         <img src="assets/logos/Cnet-Logo-300-Light.png" alt="" class="press-wrap-image">
         <img src="assets/logos/Chip-Logo-2.png" alt="" class="press-wrap-image">
         <img src="assets/logos/Bloovi-1.png" alt="" class="press-wrap-image">
         <img src="assets/logos/Gizmodo-Logo-300-Light.png" alt="" class="press-wrap-image">
         <img src="assets/logos/PCAdvisor-Light.png" alt="" class="press-wrap-image">
+    </div>
+</div>
+
+ <!-- =================== Pricing =================-->
+<div class="row pricing">
+    <h1>Simple pricing</h1>
+    <h4>PRODUCT COST + SHIPPING + SERVICE FEE</h4>
+    <div class="pricing-card">
+        <i class="fa fa-laptop fa-5x blue-text"></i>
+        <h3 class="pricing-h3 blue-text">Product cost</h3>
+        <p class="pricing-description">Simply tell us what product you want to buy. We'll email you a free quote within 24
+            hours.      </p>
+    </div>
+    <div class="pricing-card">
+        <i class="fa fa-dropbox fa-5x blue-text"></i>
+        <h3 class="pricing-h3 blue-text">shipping</h3>
+        <p class="pricing-description">What our shipping partners (Fedex, DHL, UPS) charge to ship the item to your door from the U.S.</p>
+    </div>
+    <div class="pricing-card">
+        <i class="fa fa-user fa-5x blue-text"></i>
+        <h3 class="pricing-h3 blue-text">service free</h3>
+        <p class="pricing-description">What we charge to take care of the entire process for you. Flat $50 for the first item, $15 for every additional item.</p>
+    </div>
+    <div class="pricing-button">
+        <button class="button-type1">Get started</button>
+    </div>
+</div>
+
+
+<!-- ================= SLIDER ====================-->
+
+<div class="slider" >
+    <h1 id="slider-header">#BABit</h1>
+    <p class="slider-text">Delivering products to customers worldwide</p>
+    <div id="slider-wrapper" class="slider-wrapper">
     </div>
 </div>
 
